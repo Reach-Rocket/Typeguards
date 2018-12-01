@@ -2,7 +2,7 @@
 	"name": "@reach-rocket/typeguards",
 	"version": "0.1.2",
 	"description": "Typescript Typeguards used by Reach Rocket",
-	"main": "index.js",
+	"main": "dist/typeguards.js",
 	"scripts": {
 		"prepublishOnly": "npm test && npm run lint",
 		"build": "tsc",
