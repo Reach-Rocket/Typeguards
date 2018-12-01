@@ -1,6 +1,5 @@
 # the Asterix also filters out node_modules_bak which might be created by 'cost-of-modules'
 node_modules*/
-dist/
 
 # nyc stuff
 .nyc_output
