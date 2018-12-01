@@ -146,7 +146,7 @@ describe('Typeguards', () => {
 		expect(isFunction(() => null)).to.be.equal(true);
 		expect(
 			isFunction(
-				/* istanbul ignore next */ function():false {
+				/* istanbul ignore next */ function(): false {
 					return false;
 				},
 			),
