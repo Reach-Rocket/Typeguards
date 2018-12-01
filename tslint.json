@@ -1,0 +1,127 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+		"tslint:recommended",
+		"tslint-sonarts",
+		"tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "array-type": [true, "array-simple"],
+        "arrow-return-shorthand": true,
+        "class-name": false,
+        "encoding": true,
+        "file-header": [true, "Copyright \\d{4} Reach Rocket UG \\(haftungsbeschränkt\\)"],
+		"import-spacing": true,
+		"indent": [true, "tabs"],
+		"typedef-whitespace": false,
+		"variable-name": [
+			true,
+			"ban-keywords",
+			"check-format",
+			"allow-leading-underscore",
+			"allow-snake-case"
+		],
+		"no-console": false,
+		"no-debugger": true,
+		"whitespace": [ true,
+			"check-decl",
+			"check-operator",
+			"check-module",
+			"check-separator",
+			"check-rest-spread",
+			"check-typecast",
+			"check-type-operator"
+		],
+		"only-arrow-functions": false,
+		"typedef": [true,
+			"call-signature",
+			"arrow-call-signature",
+			"parameter",
+			"arrow-parameter",
+			"property-declaration",
+			"variable-declaration",
+			"member-variable-declaration",
+			"object-destructuring",
+			"array-destructuring"
+		],
+		"object-literal-shorthand": [true, "never"],
+		"quotemark": [true, "single"],
+		"align": true,
+		"callable-types": true,
+		"no-commented-code": false,
+		"no-consecutive-blank-lines": [true, 2],
+		"max-line-length": [true, 150],
+		"semicolon": false,
+		"curly": false,
+		"no-magic-numbers": true,
+		"ban-comma-operator": true,
+		"no-conditional-assignment": true,
+		"no-duplicate-super": true,
+		"no-duplicate-variable": true,
+		"no-duplicate-switch-case": true,
+		"no-dynamic-delete": true,
+		"no-eval": true,
+		"no-invalid-template-strings": true,
+		"no-misused-new": true,
+		"no-string-throw": true,
+		"no-sparse-arrays": true,
+		"no-this-assignment": true,
+		"no-unbound-method": true,
+		"no-unsafe-finally": true,
+		"no-var-keyword": true,
+		"prefer-object-spread": true,
+		"strict-boolean-expressions": true,
+		"triple-equals": true,
+		"use-isnan": true,
+
+		"cyclomatic-complexity": true,
+
+		"no-unnecessary-callback-wrapper": true,
+		"completed-docs": [
+			false,
+			{
+				"classes": true,
+				"enums": true,
+				"functions": 	{"visibilities": ["exported"]},
+				"interfaces": 	{"visibilities": ["exported"]},
+				"methods": 		{"locations": "all", "privacies": ["public", "protected"]},
+				"properties": 	{"locations": "all", "privacies": ["public", "protected"]},
+				"types": true,
+				"variables": false
+			}
+		],
+		"jsdoc-format": true,
+		"no-irregular-whitespace": true,
+		"no-redundant-jsdoc": true,
+		"no-unnecessary-initializer": true,
+		"number-literal-format": true,
+		"prefer-function-over-method": true,
+		"prefer-switch": true,
+		"prefer-template": [true, "allow-single-concat"],
+		"prefer-while": true,
+		"return-undefined": true,
+
+		"no-var-requires": true,
+		"no-implicit-dependencies": [true, ["meteor"]],
+
+		"no-return-await": true,
+		"promise-function-async": true,
+		"no-floating-promises": true,
+
+		"no-for-in-array": true,
+		"prefer-for-of": true,
+
+		// consistent Code Style
+		"no-collapsible-if": true,
+		"no-var-before-return": true,
+
+		// custom:
+		// "ban-await": false, incomplete, does not work.
+		"ban-error": false
+	},
+	"rulesDirectory": [
+		"tslint-consistent-codestyle",
+		"tslint-misc-rules"
+	]
+}

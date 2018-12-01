@@ -1,0 +1,46 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2018",
+		"moduleResolution": "node",
+		"declaration": true,
+		"outDir": "./dist",
+		"strict": true,
+		"sourceMap": true,
+
+		"alwaysStrict": true,
+		"experimentalDecorators": true,
+		"allowJs": false,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictBindCallApply": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"*" : [
+				"*",
+				"typings/*"
+			]
+		},
+		"lib": [
+			"es5",
+			"es6",
+			"es2017",
+			"es2018",
+			"dom"
+		]
+	},
+	"include": [
+		"src",
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	],
+	"filesGlob": [
+		"./**/*.ts",
+		"typings/**/*.d.ts"
+	]
+}

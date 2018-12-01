@@ -1,0 +1,51 @@
+{
+	"name": "@reach-rocket/typeguards",
+	"version": "0.1.0",
+	"description": "Typescript Typeguards used by Reach Rocket",
+	"main": "index.js",
+	"scripts": {
+		"prepublishOnly": "npm test && npm run lint",
+		"build": "tsc",
+		"pretest": "npm run build",
+		"test": "npm run lint && nyc --check-coverage --lines 100 --functions 100 --branches 100 mocha dist/**/*.spec.js",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"lint": "tslint -p tsconfig.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Reach-Rocket/Typeguards.git"
+	},
+	"keywords": [
+		"Typescript",
+		"Typeguards"
+	],
+	"author": "Marvin 'Marvinside' Wiesner",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/Reach-Rocket/Typeguards/issues"
+	},
+	"homepage": "https://github.com/Reach-Rocket/Typeguards#readme",
+	"dependencies": {
+		"@types/chai": "^4.1.7"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.5",
+		"chai": "^4.2.0",
+		"mocha": "^5.2.0",
+		"nyc": "^13.1.0",
+		"prettier": "^1.15.3",
+		"ts-node": "^7.0.1",
+		"tslint": "^5.11.0",
+		"tslint-config-prettier": "^1.17.0",
+		"tslint-consistent-codestyle": "^1.14.1",
+		"tslint-misc-rules": "^3.5.1",
+		"tslint-sonarts": "^1.8.0",
+		"tsutils": "^3.5.1",
+		"typescript": "^3.2.1"
+	},
+	"nyc": {
+		"exclude": [
+			"**/*.spec.js"
+		]
+	}
+}
