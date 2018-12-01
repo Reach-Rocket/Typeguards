@@ -1,6 +1,6 @@
 {
 	"name": "@reach-rocket/typeguards",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Typescript Typeguards used by Reach Rocket",
 	"main": "dist/typeguards.js",
 	"scripts": {
